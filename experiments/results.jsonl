@@ -1,19 +1,5 @@
-# NSD Decoding results
-
-**Constant baseline**
-
-```
 {"script": "nsd_flat_cococlip_decoding_v0", "args": {"notes": "constant baseline"}, "sha": "020599470f358d64bc9dc57cee0a83f67c78aac4", "clean": true, "wall_t": 6.797, "acc_train": 3.952, "acc_validation": 3.636, "acc_test": 3.748, "acc_testid": 3.798}
-```
-
-**CNN baseline**
-
-```
 {"script": "nsd_flat_cococlip_decoding_v1", "args": {"epochs": 30, "notes": "v1 simple CNN baseline"}, "sha": "020599470f358d64bc9dc57cee0a83f67c78aac4", "clean": false, "wall_t": 362.941, "acc_train": 23.003, "acc_validation": 19.288, "acc_test": 19.889, "acc_testid": 20.224}
-```
-
-**Shallow MLP**
-
-```
 {"script": "nsd_flat_cococlip_decoding_v2", "args": {"epochs": 30, "hidden": 512, "lr": 0.001, "wd": 0.01, "notes": "v2 shallow MLP masked"}, "sha": "5a381de5e97245a33706ffd305f59f33783bafb9", "clean": true, "wall_t": 205.701, "acc_train": 55.349, "acc_validation": 19.269, "acc_test": 19.351, "acc_testid": 36.63}
-```
+{"script": "nsd_flat_cococlip_decoding_v3", "args": {"epochs": 30, "latent_dim": 256, "depth": 3, "dropout": 0.5, "drop_path": 0.1, "lr": 0.001, "wd": 0.01, "notes": "v3 residual MLP"}, "sha": "789de871a35b383957e55bea9cc6245b72c527a3", "clean": true, "wall_t": 214.174, "acc_train": 51.046, "acc_validation": 21.669, "acc_test": 22.486, "acc_testid": 38.577}
+{"script": "nsd_flat_cococlip_decoding_v4", "args": {"epochs": 30, "n_components": 256, "depth": 3, "dropout": 0.5, "drop_path": 0.1, "lr": 0.001, "wd": 0.01, "notes": "v4 PCA residual MLP"}, "sha": "897e9dc8ab25901ac9ef730db3e135367e0cb0a6", "clean": false, "wall_t": 90.794, "acc_train": 40.01, "acc_validation": 22.924, "acc_test": 22.134, "acc_testid": 33.275}
