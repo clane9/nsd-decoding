@@ -130,7 +130,7 @@ def main(args):
     )
 
     # Load data
-    dataset_dict = hfds.load_from_disk(ROOT / "datasets/nsd_flat_cococlip")
+    dataset_dict = hfds.load_dataset("clane9/nsd-flat-cococlip")
 
     print("Loading tensors...")
     splits = {}

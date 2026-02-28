@@ -19,7 +19,7 @@ def main(args):
     sha, is_clean = get_sha()
     print(f"sha: {sha}, clean: {is_clean}")
 
-    dataset_dict = hfds.load_from_disk(ROOT / "datasets/nsd_flat_cococlip")
+    dataset_dict = hfds.load_dataset("clane9/nsd-flat-cococlip")
     dataset_dict.set_format("torch")
 
     preds = {split: np.full(len(ds), 0, dtype=np.int64) for split, ds in dataset_dict.items()}
